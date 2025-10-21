@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "better.echantment.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"EnchantingTableBlockAccessorMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
