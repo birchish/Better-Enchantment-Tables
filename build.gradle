@@ -22,18 +22,12 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"better-enchantment" {
+		"better-enchantment-tables" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}
 	}
 
-}
-
-fabricApi {
-	configureDataGeneration {
-		client = true
-	}
 }
 
 dependencies {

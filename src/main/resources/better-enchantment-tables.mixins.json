@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "bet.enchanttable.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"EnchantTableRangeAccessorMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

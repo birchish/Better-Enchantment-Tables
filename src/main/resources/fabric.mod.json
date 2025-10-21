@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "better-enchantment-table",
+	"id": "better-enchantment-tables",
 	"version": "${version}",
 	"name": "Better Enchantment Tables",
 	"description": "Modifies enchantment tables to have more range and other quality of life changes.",
@@ -12,28 +12,27 @@
 		"sources": "https://github.com/birchish/Better-Enchantment-Tables"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/better-enchantment/icon.png",
+	"icon": "assets/better-enchantment-tables/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"better.enchantment.BetterEnchantment"
+			"bet.enchanttable.BetterEnchantmentTables"
 		],
 		"client": [
-			"better.enchantment.BetterEnchantmentClient"
+			"bet.enchanttable.BetterEnchantmentTablesClient"
 		]
 	},
 	"mixins": [
-		"better-enchantment.mixins.json",
+		"better-enchantment-tables.mixins.json",
 		{
-			"config": "better-enchantment.client.mixins.json",
+			"config": "better-enchantment-tables.client.mixins.json",
 			"environment": "client"
 		}
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.21.10",
-		"java": ">=21"
-	},
-	"suggests": {
+		"java": ">=21",
+		"fabric-api": "0.136.0+1.21.10"
 	}
 }
