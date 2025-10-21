@@ -13,11 +13,11 @@ import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
 
-@Mixin(value = EnchantingTableBlock.class)//
+@Mixin(value = EnchantingTableBlock.class, priority = 1001)//
 public interface EnchantingTableBlockAccessorMixin {
 	@Accessor("POWER_PROVIDER_OFFSETS")
 	@Mutable()
-    static void modid$setPOWER_PROVIDER_OFFSETS (List<BlockPos> blockStream) {
+    static void BetterEnchantmentTable$setPOWER_PROVIDER_OFFSETS (List<BlockPos> blockStream) {
 		throw new AssertionError();
 	}
 }

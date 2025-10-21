@@ -8,8 +8,8 @@
 		"Birch"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/birchish/Better-Enchantment-Tables",
+		"sources": "https://github.com/birchish/Better-Enchantment-Tables"
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/better-enchantment/icon.png",
@@ -23,13 +23,16 @@
 		]
 	},
 	"mixins": [
-		"better-enchantment.mixins.json"
+		"better-enchantment.mixins.json",
+		{
+			"config": "better-enchantment.client.mixins.json",
+			"environment": "client"
+		}
 	],
 	"depends": {
 		"fabricloader": ">=0.17.3",
 		"minecraft": "~1.21.10",
-		"java": ">=21",
-		"fabric-api": "*"
+		"java": ">=21"
 	},
 	"suggests": {
 	}
