@@ -6,7 +6,7 @@ import net.minecraft.util.math.BlockPos;
 import static better.enchantment.mixin.EnchantingTableBlockAccessorMixin.BetterEnchantmentTable$setPOWER_PROVIDER_OFFSETS;
 
 public class BetterEnchantment implements ModInitializer {
-	public static final String MOD_ID = "better-enchantment";
+//	public static final String MOD_ID = "better-enchantment";
 
 	@Override
 	public void onInitialize() {
